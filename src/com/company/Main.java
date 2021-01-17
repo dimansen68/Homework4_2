@@ -8,21 +8,13 @@ public class Main {
       public void toLeft() {}
       2.Пройти с 1-го до предпоследнего элемента
      */
-        int[][] mas = new int[10][10];
-        int i, j, k = 0;
-        for (i = 0; i < 10; i++)
-            for (j = 0; j < 10; j++) {
-                mas[i][j] = k;
-                k++;
-            }
-        ;
-        for (i = 0; i < 10; i++) {
-            for (j = 0; j < 10; j++)
+        int[][] mas = {{1,2,3},{1},{1,2,3,4,5},{2,4,6,7}};
+        for (int i = 0; i < mas.length; i++) {
+            for (int j = 0; j < mas[i].length; j++)
                 System.out.print(mas[i][j] + " ");
-
-            ;
-            System.out.println("\n");
+            System.out.println();
         }
     }
 }
+
 
